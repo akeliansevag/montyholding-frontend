@@ -1,0 +1,68 @@
+<template>
+    <section class="bg-black py-20 text-white">
+        <div class="container">
+            <SectionIntro title="About Us"
+                description="Founded in 1998 by visionary entrepreneur Mountasser Hachem, Monty Holding has rapidly evolved into a global powerhouse, reshaping industries and exceeding expectations. From our UK headquarters, we're not just delivering solutions but we're architecting the future for our clients and partners."
+                class="text-white" />
+
+            <div class="relative grid grid-cols-4 mt-20">
+                <div v-for="stat in stats" class="stat text-center p-8 border border-[#BC945D]">
+                    <h4 class="text-3xl font-bold z-20">{{ stat.title }}</h4>
+                    <p>{{ stat.description }}</p>
+                </div>
+            </div>
+
+            <div class="mt-20 max-w-[800px] mx-auto">
+                <div class="text-center">
+                    <div class="inline-flex gap-5">
+                        <button class="mission-vision">Mission</button>
+                        <button class="mission-vision">Vision</button>
+                    </div>
+
+                    <div class="mt-10">
+                        <h4 class="text-3xl">Our mission is to ignite positive impact through exceptional performance.
+                            We’re in the business of building better worlds.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</template>
+
+<script setup>
+const stats = [
+    {
+        title: '2.5 B',
+        description: 'Mobile Subscribers'
+    },
+    {
+        title: '120',
+        description: 'Countries Worldwide'
+    },
+    {
+        title: '$245 M',
+        description: 'Revenue FY23'
+    },
+    {
+        title: '3.7%',
+        description: 'EBITDA Margin FY23'
+    },
+    {
+        title: '35',
+        description: 'Exclusive / Preferred Partners'
+    },
+    {
+        title: '12.8%',
+        description: 'Revenue CAGR FY23A-FY29E'
+    },
+    {
+        title: '$84.4 M',
+        description: 'Capital Employed'
+    },
+    {
+        title: '19',
+        description: 'Countries of Presence'
+    }
+];
+</script>

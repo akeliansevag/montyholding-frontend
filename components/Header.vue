@@ -1,5 +1,6 @@
 <template>
-    <section class="fixed top-0 w-full z-30 h-[90px] text-white">
+    <section class="transition-all fixed top-0 w-full z-30 h-[90px] text-white"
+        :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent'">
         <div class="container flex items-center justify-between h-full">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
@@ -59,4 +60,21 @@
 
 <script setup>
 
+const scrolled = ref(false);
+onMounted(() => {
+    const handleScroll = () => {
+        if (window.scrollY === 0) {
+            scrolled.value = false;
+        } else {
+            scrolled.value = true;
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    onUnmounted(() => {
+        window.removeEventListener("scroll", handleScroll);
+    });
+});
 </script>

@@ -1,3 +1,52 @@
 body{
     font-family: 'Nunito Sans';
 }
+
+.mh-button{
+    @apply rounded-full text-center text-white px-6 py-2 inline-block;
+    background: linear-gradient(90deg, #BC945D -736.92%, #966F41 -478.52%, #C89B62 -340.1%, #EFBD7C -220.13%, #FECB86 -155.53%, #ECBB7A -81.7%, #BF935C 65.95%, #966F41 185.92%);
+}
+
+.mh-button.white{
+    background: white;
+    color:black;
+}
+
+.mh-button:hover{
+    background: linear-gradient(180deg, #BC945D -736.92%, #966F41 -478.52%, #C89B62 -340.1%, #EFBD7C -220.13%, #FECB86 -155.53%, #ECBB7A -81.7%, #BF935C 65.95%, #966F41 185.92%);
+    color:white;    
+}
+
+.stat:hover{
+    background: linear-gradient(90deg, #BC945D -736.92%, #966F41 -478.52%, #C89B62 -340.1%, #EFBD7C -220.13%, #FECB86 -155.53%, #ECBB7A -81.7%, #BF935C 65.95%, #966F41 185.92%);
+}
+
+.stat:nth-child(1){
+    border-bottom: 0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+
+.stat:nth-child(2), .stat:nth-child(3), .stat:nth-child(4){
+    border-bottom: 0;
+    border-top:0;
+    border-right:0;
+}
+.stat:nth-child(5){
+    border-left: 0;
+    border-bottom: 0;
+    border-right:0;
+}
+.stat:nth-child(6), .stat:nth-child(7), .stat:nth-child(8){
+    border-bottom: 0;
+    border-right:0;
+}
+
+.mission-vision{
+    @apply rounded-full text-center text-[#BC945D] px-6 py-2 inline-block border border-[#BC945D];
+}
+
+.mission-vision:hover{
+    @apply bg-[#BC945D] text-white;
+}
