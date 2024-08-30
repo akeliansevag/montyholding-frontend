@@ -8,9 +8,9 @@
                     props.button.text
                 }}</a>
             </div>
-            <div v-if="props.directors" class="grid grid-cols-4 gap-20 mt-20">
+            <div v-if="props.directors" class="grid grid-cols-4 gap-10 mt-20">
                 <div v-for="director in props.directors">
-                    <img v-if="director.image" class="mb-5 mx-auto w-full" :src="director.image" alt="">
+                    <img v-if="director.image" class="mb-5 mx-auto" :src="director.image" alt="">
                     <div class="flex flex-col gap-1 items-center">
                         <h4 class="text-[22px] font-bold">{{ director.name }}</h4>
                         <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="text-xl"><i>{{ director.position
