@@ -8,7 +8,7 @@
                     props.button.text
                 }}</a>
             </div>
-            <div v-if="props.directors" class="grid grid-cols-4 gap-10 mt-20">
+            <div v-if="props.directors" class="grid grid-cols-4 gap-10 mt-20 max-w-[1200px] mx-auto">
                 <div v-for="director in props.directors">
                     <img v-if="director.image" class="mb-5 mx-auto" :src="director.image" alt="">
                     <div class="flex flex-col gap-1 items-center">
