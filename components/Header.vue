@@ -1,9 +1,9 @@
 <template>
-    <section class="transition-all fixed top-0 w-full z-30 text-white"
-        :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent h-[90px]'">
-        <div class="container flex items-center justify-between h-full">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
+    <section class="transition-all fixed top-0 w-full z-50 text-white"
+      :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent h-[90px]'">
+      <div class="container flex items-center justify-between h-full">
+        <div class="z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
                     <g clip-path="url(#clip0_1523_3106)">
                         <path
                             d="M5.96283 1.2168L11.6504 17.2735L17.3076 1.2168H23.3007V23.3563H18.7219V17.3038L19.179 6.85774L13.2011 23.3563H10.0668L4.10655 6.87289L4.56367 17.3038V23.3563H0V1.2168H5.96283Z"
@@ -46,35 +46,83 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </div>
-            <div>
-                <ul class="flex gap-5">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Board of directors</a></li>
-                    <li><a href="#">Our Business Endeavors</a></li>
-                </ul>
-            </div>
         </div>
+        <div 
+          :class="`fixed lg:relative w-full h-full lg:w-auto lg:h-auto bg-black lg:bg-transparent top-0 transition-all ${menuOpen ? 'left-0' : '-left-full lg:left-auto'}`">
+          <ul class="flex flex-col text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Board of directors</a></li>
+            <li><a href="#">Our Business Endeavors</a></li>
+          </ul>
+        </div>
+        <button @click="toggleMenu" class="hamburger focus:outline-none lg:hidden">
+            <div :class="menuOpen ? 'open' : ''" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+      </div>
     </section>
-</template>
-
-<script setup>
-
-const scrolled = ref(false);
-onMounted(() => {
+  </template>
+  
+  <script setup>
+  import { ref, onMounted, onUnmounted } from 'vue';
+  
+  const scrolled = ref(false);
+  const menuOpen = ref(false);
+  
+  const toggleMenu = () => {
+    menuOpen.value = !menuOpen.value;
+  };
+  
+  onMounted(() => {
     const handleScroll = () => {
-        if (window.scrollY === 0) {
-            scrolled.value = false;
-        } else {
-            scrolled.value = true;
-        }
+      scrolled.value = window.scrollY !== 0;
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component is unmounted
+  
     onUnmounted(() => {
-        window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     });
-});
-</script>
+  });
+  </script>
+  
+  <style scoped>
+  .hamburger-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+  
+  .hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+    position: absolute;
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 8px;
+    position: absolute;
+  }
+  </style>
+  

@@ -22,25 +22,25 @@ body{
 }
 
 .stat:nth-child(1){
-    border-bottom: 0;
-    border-top:0;
-    border-left:0;
-    border-right:0;
+    border-bottom-width: 0;
+    border-top-width:0;
+    border-left-width:0;
+    border-right-width:0;
 }
 
 .stat:nth-child(2), .stat:nth-child(3), .stat:nth-child(4){
-    border-bottom: 0;
-    border-top:0;
-    border-right:0;
+    border-bottom-width: 0;
+    border-top-width:0;
+    border-right-width:0;
 }
 .stat:nth-child(5){
-    border-left: 0;
-    border-bottom: 0;
-    border-right:0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-right-width:0;
 }
 .stat:nth-child(6), .stat:nth-child(7), .stat:nth-child(8){
-    border-bottom: 0;
-    border-right:0;
+    border-bottom-width: 0;
+    border-right-width:0;
 }
 
 .mission-vision{
@@ -49,4 +49,17 @@ body{
 
 .mission-vision:hover{
     @apply bg-[#BC945D] text-white;
+}
+
+@media screen and (max-width: 768px) {
+    .stat:nth-child(1),.stat:nth-child(2){
+        border-bottom-width: 1px;
+    }
+    
+   .stat:nth-child(3){
+        border-left-width: 0;
+   }
+   .stat:nth-child(7){
+    border-left-width:0 ;
+   }
 }

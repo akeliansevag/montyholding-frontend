@@ -6,23 +6,25 @@
             <div class="text-center mt-10" v-if="props.button">
                 <a class="mh-button" :href="props.button.link" target="_blank">{{ props.button.text }}</a>
             </div>
-            <div v-if="props.directors" class="grid grid-cols-4 gap-10 mt-20 max-w-[1200px] mx-auto">
+            <div v-if="props.directors" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 max-w-[1200px] mx-auto">
                 <div
+                    
                     v-for="(director, index) in props.directors"
                     :key="index"
                     @click="director.bio && openBioModal(index)"
-                    :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }"
+                    :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio, 'max-lg:hidden': !director.name }"
                 >
-                    <img v-if="director.image" class="mb-5 mx-auto" :src="director.image" alt="">
-                    <div class="flex flex-col gap-1 items-center">
-                        <h4 class="text-[22px] font-bold">{{ director.name }}</h4>
-                        <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="text-xl">
-                            <i>{{ director.position }}</i>
-                        </h5>
-                        <a v-if="director.linkedIn" class="inline-block mt-2" target="_blank" :href="director.linkedIn">
-                            <!-- LinkedIn SVG -->
-                        </a>
-                    </div>
+                        <img v-if="director.image" class="mb-5 mx-auto" :src="director.image" alt="">
+                        <div class="flex flex-col gap-1 items-center">
+                            <h4 class="text-[22px] font-bold text-center">{{ director.name }}</h4>
+                            <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="text-xl text-center">
+                                <i>{{ director.position }}</i>
+                            </h5>
+                            <a v-if="director.linkedIn" class="inline-block mt-2" target="_blank" :href="director.linkedIn">
+                                <!-- LinkedIn SVG -->
+                            </a>
+                        </div>
+                    
                 </div>
             </div>
         </div>
@@ -43,8 +45,8 @@
                                 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/>
                             </svg>
                         </button>
-                        <div class="flex items-center gap-10 h-[80vh] md:h-auto overflow-scroll lg:overflow-visible">
-                            <div class="w-1/3">
+                        <div class="flex flex-col md:flex-row items-center gap-10 h-[80vh] md:h-auto overflow-scroll lg:overflow-visible">
+                            <div class="md:w-1/3">
                                 <img v-if="currentDirector.image" class="mb-5 mx-auto" :src="currentDirector.image" alt="">
                                 <div class="flex justify-center gap-5 mt-6">
                                     <button
@@ -65,7 +67,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="w-2/3">
+                            <div class="lg:w-2/3 text-center md:text-left">
                                 <h3 class="text-2xl font-bold mb-4">{{ currentDirector.name }}</h3>
                                 <p class="text-lg">{{ currentDirector.bio }}</p>
                             </div>

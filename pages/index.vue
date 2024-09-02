@@ -43,10 +43,10 @@ const BODMontyMobile = [
         bio: 'Susanne Hannestad is an esteemed figure in the global finance industry, bringing over 25 years of experience in governance, financial strategy, and corporate oversight. With a career spanning leadership roles at Nordea, Mastercard, and Visa, Susanne\'s influence extends across the financial sector, where she continues to champion robust governance practices. As CEO of Fintech Mundi in Norway, she has been pivotal in promoting financial inclusion and supporting the growth of innovative financial services. Susanne serves on the boards of ClearBank in the UK, Triodos Bank in the Netherlands, and Crunchfish AB in India, where her insights into financial governance and sustainable banking have been invaluable. Her previous board positions at Neonomics and Payr, along with her role as a Venture Partner at BlackFin Capital Partners, underscore her deep commitment to financial integrity and governance excellence. Additionally, her experience as a former competitive handball player adds a unique perspective to her strategic and disciplined approach to governance.'
     },
     {
-        image: '',
-        name: '',
-        position: '',
-        linkedIn: ''
+        image: null,
+        name: null,
+        position: null,
+        linkedIn: null
     },
     {
         image: '/img/jean-s.webp',
@@ -63,10 +63,10 @@ const BODMontyMobile = [
         bio: 'Joshua Smythwood is an executive with an impressive career spanning the technology and telecommunications sectors in multipe countries including the UK, USA, South Africa, and more. Currently serving as Chief Operating Officer at Open Access Data Centres (OADC) and Chief Strategy and M&A Officer at WIOCC Group, Joshua drives strategic initiatives and operational excellence. His board roles at Zanzibar Telecom Ltd., alongside his leadership positions at WIOCC and Telesis Tz Ltd., reflect his extensive expertise. Notably, at Millicom (Tigo), he excelled as Vice President and CTIO Africa, overseeing technology and enterprise business across eight African countries. His previous roles at Nokia involved leading Managed Services and Transformation for the African region, showcasing his prowess in business development and market expansion.'
     },
     {
-        image: '',
-        name: '',
-        position: '',
-        linkedIn: '',
+        image: null,
+        name: null,
+        position: null,
+        linkedIn: null,
     },
 ];
 
@@ -99,10 +99,10 @@ const BODMontyFinance = [
         bio: 'Susanne Hannestad is a visionary leader in the fintech industry, with over 25 years of experience in driving technological innovation and transformation. Her leadership roles at Nordea, Mastercard in Europe, and Visa further highlight her deep expertise in fintech and payments, making her a sought-after advisor in the tech-driven financial sector. As CEO of Fintech Mundi in Norway, she has a proven track record in scaling cutting-edge fintech companies and spearheading initiatives like the Financial Inclusion Summit. Susanne\'s extensive board experience includes non-executive roles at ClearBank in the UK, Zimpler in Brazil, Crunchfish AB in India, and previously at Neonomics and Payr in Norway, where she has been instrumental in guiding these companies through complex technological landscapes. Beyond her professional achievements, Susanne\'s background as a competitive handball player reflects her dynamic and strategic approach to leadership.'
     },
     {
-        image: '',
-        name: '',
-        position: '',
-        linkedIn: ''
+        image: null,
+        name: null,
+        position: null,
+        linkedIn: null
     },
     {
         image: '/img/arvinder-b.webp',
@@ -119,10 +119,10 @@ const BODMontyFinance = [
         bio: 'Sarah Alateeqi is an executive with a robust track record in investment and innovation. She currently serves as the Chief Executive Officer of Al-Mal Investment Company (KPSC) in Kuwait, a role she has held since May 2023, following her tenure as Acting CEO and Vice Chairman of the Board.  Prior to her leadership at Al-Mal, Sarah was a General Partner at Oasis Capital in North America, where she focused on investing in seed-stage startups in North America. Her earlier roles include serving as Chief Executive Officer at Zay General Trading Company in Kuwait, where she transformed the luxury e-commerce fashion platform with a focus on sustainability. Sarah also founded Supper.Club, a startup aimed at fostering business connections through intimate dinners. In addition to her executive roles, Sarah has been actively involved in venture advisory and company building at Kuwait Ventures, and has served on the boards of MAC SA and wasel. Her career began with financial analysis roles at National Investment Company and Kipco Asset Management Company (KAMCO), where she specialized in private equity and fund performance. Sarah\'s extensive experience in investment management and leadership across diverse sectors highlights her expertise in driving business growth and innovation.'
     },
     {
-        image: '',
-        name: '',
-        position: '',
-        linkedIn: '',
+        image: null,
+        name: null,
+        position: null,
+        linkedIn: null,
     },
 ];
 </script>

@@ -25,12 +25,12 @@
                         <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave"
                             @leave="leave">
                             <div v-if="activeItemId === item.id" class="content">
-                                <div class="grid grid-cols-4 items-center gap-10">
-                                    <div class="col-span-3">
+                                <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-5 lg:gap-10">
+                                    <div class="lg:col-span-3 order-2 lg:order-1">
                                         <p class="text-[20px]">{{ item.description }}</p>
                                         <a class="mh-button mt-4" target="_blank" :href="item.link">Visit Website</a>
                                     </div>
-                                    <div class="p-10 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2]">
+                                    <div class="p-10 mt-4 lg:mt-0 order-1 lg:order-2 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2]">
                                         <img :src="item.logo" alt="">
                                     </div>
                                 </div>

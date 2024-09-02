@@ -5,7 +5,7 @@
                 description="Founded in 1998 by visionary entrepreneur Mountasser Hachem, Monty Holding has rapidly evolved into a global powerhouse, reshaping industries and exceeding expectations. From our UK headquarters, we're not just delivering solutions but we're architecting the future for our clients and partners."
                 class="text-white" />
 
-            <div class="relative grid grid-cols-4 mt-20">
+            <div class="relative grid grid-cols-2 md:grid-cols-4 mt-20">
                 <div v-for="stat in stats" class="stat text-center p-8 border border-[#BC945D]">
                     <h4 class="text-3xl font-bold z-20">{{ stat.title }}</h4>
                     <p>{{ stat.description }}</p>
