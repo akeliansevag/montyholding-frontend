@@ -25,7 +25,8 @@ const BODMontyMobile = [
         image: '/img/biola-s.webp',
         name: 'Biola Alabi',
         position: 'Founder and Chairman',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Biola Alabi is a prominent business leader with extensive experience in media, venture capital, and strategic partnerships. As a General Partner at Acasia in Egypt, she focuses on venture capital and business planning. Her role as Deputy Chair of the Lagos Angel Network in Nigeria involves recruiting and educating early-stage investors to foster entrepreneurship in Nigeria. Biola also serves on the board of Unilever Nigeria PLC, where she leverages her expertise in strategic partnerships and contract negotiation. As the founder of Grooming For Greatness, she cultivates leadership among young African professionals. Her past roles include being a Senior Advisor & Executive Producer at Biola Alabi Media and Entertainment, where she provided consulting for media and technology initiatives. She is also a Yale World Fellow in the USA and a former Managing Director at M-Net Africa in Lagos, Nairobi and Johannesburg, where she led major expansion projects and earned accolades for her visionary leadership. Biola’s career also includes significant roles at Sesame Workshop and Bigwords.com, demonstrating her broad expertise across various sectors.'
     },
     {
         image: '/img/hassan-s.webp',
@@ -38,7 +39,8 @@ const BODMontyMobile = [
         image: '/img/susanne-s.webp',
         name: 'Susanne Hannestad',
         position: 'Founder and Chairman',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Susanne Hannestad is an esteemed figure in the global finance industry, bringing over 25 years of experience in governance, financial strategy, and corporate oversight. With a career spanning leadership roles at Nordea, Mastercard, and Visa, Susanne\'s influence extends across the financial sector, where she continues to champion robust governance practices. As CEO of Fintech Mundi in Norway, she has been pivotal in promoting financial inclusion and supporting the growth of innovative financial services. Susanne serves on the boards of ClearBank in the UK, Triodos Bank in the Netherlands, and Crunchfish AB in India, where her insights into financial governance and sustainable banking have been invaluable. Her previous board positions at Neonomics and Payr, along with her role as a Venture Partner at BlackFin Capital Partners, underscore her deep commitment to financial integrity and governance excellence. Additionally, her experience as a former competitive handball player adds a unique perspective to her strategic and disciplined approach to governance.'
     },
     {
         image: '',
@@ -48,15 +50,17 @@ const BODMontyMobile = [
     },
     {
         image: '/img/jean-s.webp',
-        name: 'Jean Jacques Pany',
+        name: 'Jean Jacques Panny',
         position: 'Founder and Chairman',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Jean Jacques Pany is an executive with extensive experience in the telecom and technology sectors. Notably, at Orange, he served for nearly two decades in various pivotal roles, including Vice President for Orange Europe, where he managed a substantial budget and workforce, and Vice President for Orange Spain, driving significant financial and operational objectives. His earlier roles at Orange also included Vice President of Digital for Orange France and Operations for Orange Poland, demonstrating his expertise in restructuring, strategic planning, and business development. As President of TheComPany.eu.com in Paris, he provides strategic advisory and investment guidance to mid-sized and startup companies, fostering growth through innovation. His previous tenure as Group Director of Technology Projects at VEON in Amsterdam showcased his leadership on the Group Leadership Team. Jean Jacques’ career spans back to his early roles at Bull, ENGIE, and McDermott International, showcasing a broad and impactful career in technology and telecommunications.'
     },
     {
         image: '/img/joshua-s.webp',
         name: 'Joshua Smythwood',
         position: 'Founder and Chairman',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Joshua Smythwood is an executive with an impressive career spanning the technology and telecommunications sectors in multipe countries including the UK, USA, South Africa, and more. Currently serving as Chief Operating Officer at Open Access Data Centres (OADC) and Chief Strategy and M&A Officer at WIOCC Group, Joshua drives strategic initiatives and operational excellence. His board roles at Zanzibar Telecom Ltd., alongside his leadership positions at WIOCC and Telesis Tz Ltd., reflect his extensive expertise. Notably, at Millicom (Tigo), he excelled as Vice President and CTIO Africa, overseeing technology and enterprise business across eight African countries. His previous roles at Nokia involved leading Managed Services and Transformation for the African region, showcasing his prowess in business development and market expansion.'
     },
     {
         image: '',
@@ -78,7 +82,8 @@ const BODMontyFinance = [
         image: '/img/mike-b.webp',
         name: 'Mike Quintanilla',
         position: 'Board Member',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Mike Quintanilla is a leader in fintech and blockchain technology, with a proven track record across several high-impact roles in the USA. At SoftServe, as the Director of Blockchain & BaaS, he led the transformation of payment systems by integrating advanced technologies and collaborating with industry giants such as AWS, Azure, and GCP. Prior to this, as Senior Director of Fintech & Innovation at Blockchains, Inc., Mike enhanced AML/CFT frameworks and focused on innovative solutions within the digital asset ecosystem. His role as Chief Innovation Officer at GenuBank saw him overhaul the bank\'s technology infrastructure, implementing real-time payment services and crypto compliance initiatives. His earlier experience includes strategic positions at First Horizon Bank, where he advanced blockchain integration and cryptocurrency initiatives, and at Susquehanna Bank and Mitsubishi UFJ Trust & Banking Corporation, where he made significant contributions to FX trading and client relations. Mike\'s extensive background in fintech, blockchain, and regulatory compliance underscores his expertise in driving technological and strategic advancements in the financial sector.'
     },
     {
         image: '/img/randa-b.webp',
@@ -90,7 +95,8 @@ const BODMontyFinance = [
         image: '/img/susanne-b.webp',
         name: 'Susanne Hannestad',
         position: 'Board Member',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Susanne Hannestad is a visionary leader in the fintech industry, with over 25 years of experience in driving technological innovation and transformation. Her leadership roles at Nordea, Mastercard in Europe, and Visa further highlight her deep expertise in fintech and payments, making her a sought-after advisor in the tech-driven financial sector. As CEO of Fintech Mundi in Norway, she has a proven track record in scaling cutting-edge fintech companies and spearheading initiatives like the Financial Inclusion Summit. Susanne\'s extensive board experience includes non-executive roles at ClearBank in the UK, Zimpler in Brazil, Crunchfish AB in India, and previously at Neonomics and Payr in Norway, where she has been instrumental in guiding these companies through complex technological landscapes. Beyond her professional achievements, Susanne\'s background as a competitive handball player reflects her dynamic and strategic approach to leadership.'
     },
     {
         image: '',
@@ -102,13 +108,15 @@ const BODMontyFinance = [
         image: '/img/arvinder-b.webp',
         name: 'Arvinder Gujral',
         position: 'Board Member',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Arvinder Gural is an executive with a robust track record in driving global growth and innovation in the technology and telecom sectors. Previously, he served as Managing Director for Southeast Asia at Twitter in APAC, where he turned around negative business trends, achieving 7.5X growth and establishing SEA as a top 10 market in revenue and audience. As a founding member of Twitter India, he played a pivotal role in its setup and expansion. As Chief Revenue Officer at WATI in Singapore, he led go-to-market strategies, revenue generation, and customer success initiatives, significantly expanding the company’s global footprint. Arvinder also held leadership roles at Aircel, Geodesic, CIBER, iGATE in San Francisco, and Infosys, where he drove substantial revenue growth, built strategic partnerships, and led impactful marketing and business development initiatives. His extensive experience and strategic vision have been instrumental in scaling businesses and navigating complex markets.'
     },
     {
         image: '/img/sara-b.webp',
         name: 'Sarah Alateeqi',
         position: 'Board Member',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'Sarah Alateeqi is an executive with a robust track record in investment and innovation. She currently serves as the Chief Executive Officer of Al-Mal Investment Company (KPSC) in Kuwait, a role she has held since May 2023, following her tenure as Acting CEO and Vice Chairman of the Board.  Prior to her leadership at Al-Mal, Sarah was a General Partner at Oasis Capital in North America, where she focused on investing in seed-stage startups in North America. Her earlier roles include serving as Chief Executive Officer at Zay General Trading Company in Kuwait, where she transformed the luxury e-commerce fashion platform with a focus on sustainability. Sarah also founded Supper.Club, a startup aimed at fostering business connections through intimate dinners. In addition to her executive roles, Sarah has been actively involved in venture advisory and company building at Kuwait Ventures, and has served on the boards of MAC SA and wasel. Her career began with financial analysis roles at National Investment Company and Kipco Asset Management Company (KAMCO), where she specialized in private equity and fund performance. Sarah\'s extensive experience in investment management and leadership across diverse sectors highlights her expertise in driving business growth and innovation.'
     },
     {
         image: '',
