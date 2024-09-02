@@ -15,13 +15,13 @@
             <div class="mt-20 max-w-[800px] mx-auto">
                 <div class="text-center">
                     <div class="inline-flex gap-5">
-                        <button class="mission-vision">Mission</button>
-                        <button class="mission-vision">Vision</button>
+                        <button :class="activeButton === 'mission' ? 'opacity-100' : 'opacity-50'" @click="handleActiveClick('mission')" class="mission-vision">Mission</button>
+                        <button :class="activeButton === 'vision' ? 'opacity-100' : 'opacity-50'" @click="handleActiveClick('vision')" class="mission-vision">Vision</button>
                     </div>
 
                     <div class="mt-10">
-                        <h4 class="text-3xl" id="mission">Our mission is to ignite positive impact through exceptional performance. We’re in the business of building better worlds.</h4>
-                        <h4 class="text-3xl" id="vision">Unleashing the full potential of a connected world through innovative telecom and financial solutions, aiming to achieve global dominance in both sectors.</h4>
+                        <h4 v-if="activeButton === 'mission'" ref="mission" class="text-3xl" >Our mission is to ignite positive impact through exceptional performance. We’re in the business of building better worlds.</h4>
+                        <h4 v-if="activeButton === 'vision'"ref="vision" class="text-3xl" id="vision">Unleashing the full potential of a connected world through innovative telecom and financial solutions, aiming to achieve global dominance in both sectors.</h4>
                     </div>
                 </div>
             </div>
@@ -31,6 +31,17 @@
 </template>
 
 <script setup>
+
+const activeButton = ref('mission');
+
+const handleActiveClick = (item) => {
+    if(item === 'mission'){
+        activeButton.value = 'mission';
+    }
+    if(item === 'vision'){
+        activeButton.value = 'vision';
+    }
+}
 const stats = [
     {
         title: '2.5 B',
