@@ -20,8 +20,8 @@
                     </div>
 
                     <div class="mt-10">
-                        <h4 class="text-3xl">Our mission is to ignite positive impact through exceptional performance.
-                            We’re in the business of building better worlds.</h4>
+                        <h4 class="text-3xl" id="mission">Our mission is to ignite positive impact through exceptional performance. We’re in the business of building better worlds.</h4>
+                        <h4 class="text-3xl" id="vision">Unleashing the full potential of a connected world through innovative telecom and financial solutions, aiming to achieve global dominance in both sectors.</h4>
                     </div>
                 </div>
             </div>

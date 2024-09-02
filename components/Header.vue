@@ -1,6 +1,6 @@
 <template>
-    <section class="transition-all fixed top-0 w-full z-30 h-[90px] text-white"
-        :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent'">
+    <section class="transition-all fixed top-0 w-full z-30 text-white"
+        :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent h-[90px]'">
         <div class="container flex items-center justify-between h-full">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
