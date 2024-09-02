@@ -138,6 +138,10 @@ function handleKeydown(event) {
     } else if (event.key === 'ArrowLeft') {
         prevDirector();
     }
+
+    if (event.key === 'Escape'){
+        closeBioModal();
+    }
 }
 
 onMounted(() => {
