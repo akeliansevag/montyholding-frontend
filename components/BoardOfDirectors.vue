@@ -33,8 +33,8 @@
         <transition name="overlay-fade">
             <div v-if="showModal" class="fixed p-4 inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" @click.self="closeBioModal">
                 <transition name="modal-scale">
-                    <div v-if="showModal" class="bg-white text-black dark:bg-black p-8 rounded-3xl max-w-7xl max-h-full mx-auto overflow-hidden relative transform transition-transform duration-300">
-                        <button @click="closeBioModal" class="absolute top-5 right-5 text-black dark:text-white">
+                    <div v-if="showModal" class="bg-white text-black p-8 rounded-3xl max-w-7xl max-h-full mx-auto overflow-hidden relative transform transition-transform duration-300">
+                        <button @click="closeBioModal" class="absolute top-5 right-5 text-black">
                             <svg fill="#000000" height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 460.775 460.775" xml:space="preserve">
                                     <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
@@ -53,7 +53,7 @@
                                         @click="prevDirector"
                                         :disabled="currentIndex === 0"
                                         :class="{ 'opacity-50 cursor-not-allowed': currentIndex === 0 }"
-                                        class="text-black dark:text-white mh-button"
+                                        class="text-black mh-button"
                                     >
                                         < Back
                                     </button>
@@ -61,7 +61,7 @@
                                         @click="nextDirector"
                                         :disabled="currentIndex === filteredDirectors.length - 1"
                                         :class="{ 'opacity-50 cursor-not-allowed': currentIndex === filteredDirectors.length - 1 }"
-                                        class="text-black dark:text-white mh-button"
+                                        class="text-black mh-button"
                                     >
                                         Next >
                                     </button>
