@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="bg-[#7C8F7F] bg-opacity-[0.3] h-[1px] w-full mt-12 mb-10"></div> -->
-            <p class="text-center">Copyright © 2024 Monty Holding</p>
+            <p class="text-center text-base">Copyright © 2024 Monty Holding</p>
         </div>
     </section>
 </template>

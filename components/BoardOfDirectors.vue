@@ -55,7 +55,7 @@
                                         :class="{ 'opacity-50 cursor-not-allowed': currentIndex === 0 }"
                                         class="text-black mh-button"
                                     >
-                                        < Back
+                                        Back
                                     </button>
                                     <button
                                         @click="nextDirector"
@@ -63,7 +63,7 @@
                                         :class="{ 'opacity-50 cursor-not-allowed': currentIndex === filteredDirectors.length - 1 }"
                                         class="text-black mh-button"
                                     >
-                                        Next >
+                                        Next
                                     </button>
                                 </div>
                             </div>

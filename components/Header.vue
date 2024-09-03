@@ -55,8 +55,8 @@
           <ul class="flex flex-col text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
             <li><a @click="goTo($event,'about-us')" href="#">About us</a></li>
             <li><a @click="goTo($event,'board-of-directors')" href="#">Board of directors</a></li>
-            <li><a @click="goTo($event,'our-business-endeavors')" href="#">Our Business Endeavors</a></li>
-            <li><a @click="goTo($event,'our-story')" href="#">Our Story</a></li>
+            <li><a @click="goTo($event,'our-business-endeavors')" href="#">Our business endeavors</a></li>
+            <li><a @click="goTo($event,'our-story')" href="#">Our story</a></li>
           </ul>
         </div>
         <button @click="toggleMenu" class="hamburger focus:outline-none lg:hidden">

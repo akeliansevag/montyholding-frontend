@@ -1,15 +1,20 @@
 <template>
     <section class="bg-white py-20">
         <div class="container">
-            <SectionIntro title="Our Business Endeavors" />
+            <SectionIntro title="Our business endeavors" />
 
             <div>
                 <div class="border-b py-4" v-for="(item, i) in items" :key="item.id">
                     <div>
                         <div class="cursor-pointer flex items-center gap-4 justify-between" @click="toggle(item.id)">
-                            <div>
-                                <h5 class="text-[24px] font-bold mb-1">{{ item.title }}</h5>
-                                <p class="text-[20px]">{{ item.excerpt }}</p>
+                            <div class="flex w-full" >
+                                <div class="lg:w-4/5">
+                                    <h5 class="text-[24px] font-bold mb-1">{{ item.title }}</h5>
+                                    <p>{{ item.excerpt }}</p>
+                                </div>
+                                <div>
+
+                                </div>
                             </div>
 
                             <span class="transition" :class="activeItemId === item.id ? 'rotate-180' : 'rotate-0'">
@@ -25,14 +30,14 @@
                         <transition @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave"
                             @leave="leave">
                             <div v-if="activeItemId === item.id" class="content">
-                                <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-5 lg:gap-10">
-                                    <div class="lg:col-span-3 order-2 lg:order-1">
+                                <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10">
+                                    <div class="lg:col-span-4 order-2 lg:order-1">
                                         <!-- <div v-html="item.description" class="html-content"></div> -->
-                                        <p class="text-[20px]">{{ item.description }}</p>
+                                        <p>{{ item.description }}</p>
                                         <a class="mh-button mt-4" target="_blank" :href="item.link">Visit Website</a>
                                     </div>
-                                    <div class="p-10 mt-4 lg:mt-0 order-1 lg:order-2 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2]">
-                                        <img :src="item.logo" alt="">
+                                    <div class="mt-4 lg:mt-0 order-1 lg:order-2 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2] aspect-[16/12]">
+                                        <img class="w-1/2" :src="item.logo" alt="">
                                     </div>
                                 </div>
 
@@ -94,8 +99,8 @@ const items = [
     {
         id: 1,
         title: 'Monty Mobile',
-        excerpt: 'A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide.',
-        description: '',
+        excerpt: 'A global leader in telecommunications.',
+        description: 'Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide.',
         logo: '/img/montymobile-logo.svg',
         link: 'https://montymobile.com'
     },
@@ -145,9 +150,12 @@ function beforeEnter(el) {
 }
 
 function enter(el, done) {
-    el.style.transition = 'height 0.3s ease';
-    el.style.height = `${el.scrollHeight}px`;
-    el.addEventListener('transitionend', done, { once: true });
+    setTimeout(() => {
+        el.style.transition = 'height 0.3s ease';
+        el.style.height = `${el.scrollHeight}px`;
+        el.addEventListener('transitionend', done, { once: true });
+    }, 100);
+    
 }
 
 function beforeLeave(el) {
