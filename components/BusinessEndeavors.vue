@@ -36,8 +36,8 @@
                                         <p>{{ item.description }}</p>
                                         <a class="mh-button mt-4" target="_blank" :href="item.link">Visit Website</a>
                                     </div>
-                                    <div class="mt-4 lg:mt-0 order-1 lg:order-2 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2] aspect-[16/12]">
-                                        <img class="w-1/2" :src="item.logo" alt="">
+                                    <div class="mt-4 lg:mt-0 order-1 lg:order-2 flex items-center justify-center bg-[#D9D9D9] bg-opacity-[0.2] aspect-[16/8] lg:aspect-[16/12]">
+                                        <img class="w-1/3" :src="item.logo" alt="">
                                     </div>
                                 </div>
 

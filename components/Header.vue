@@ -4,7 +4,7 @@
       <div class="container flex items-center justify-between h-full">
         <div class="z-10">
           <a @click="goToTop($event)" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="max-lg:w-[150px]" width="192" height="30" viewBox="0 0 192 30" fill="none">
                     <g clip-path="url(#clip0_1523_3106)">
                         <path
                             d="M5.96283 1.2168L11.6504 17.2735L17.3076 1.2168H23.3007V23.3563H18.7219V17.3038L19.179 6.85774L13.2011 23.3563H10.0668L4.10655 6.87289L4.56367 17.3038V23.3563H0V1.2168H5.96283Z"
@@ -46,19 +46,19 @@
                             <rect width="192" height="30" fill="white" />
                         </clipPath>
                     </defs>
-                </svg>
+            </svg>
           </a>
             
         </div>
         <div 
           :class="`fixed lg:relative w-full h-full lg:w-auto lg:h-auto bg-black lg:bg-transparent top-0 transition-all ${menuOpen ? 'left-0' : '-left-full lg:left-auto'}`">
           <ul class="flex flex-col text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
-            <li><a @click="goTo($event,'about-us')" href="#">About us</a></li>
-            <li><a @click="goTo($event,'board-of-directors')" href="#">Board of directors</a></li>
-            <li><a @click="goTo($event,'our-business-endeavors')" href="#">Our business endeavors</a></li>
-            <li><a @click="goTo($event,'our-story')" href="#">Our story</a></li>
+            <li><a @click="goTo($event,'about-us')" href="#" class="hover:text-[#bc945d]">About us</a></li>
+            <li><a @click="goTo($event,'board-of-directors')" href="#" class="hover:text-[#bc945d]">Board of directors</a></li>
+            <li><a @click="goTo($event,'our-business-endeavors')" href="#" class="hover:text-[#bc945d]">Our business endeavors</a></li>
+            <li><a @click="goTo($event,'our-story')" href="#" class="hover:text-[#bc945d]">Our story</a></li>
           </ul>
-        </div>
+        </div> 
         <button @click="toggleMenu" class="hamburger focus:outline-none lg:hidden">
             <div :class="menuOpen ? 'open' : ''" class="hamburger-icon">
                 <span></span>
