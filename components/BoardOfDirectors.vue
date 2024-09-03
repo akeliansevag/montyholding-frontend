@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20" :class="dark ? 'bg-black text-white' : 'bg-white'">
+    <section class="py-10 lg:py-20" :class="dark ? 'bg-black text-white' : 'bg-white'">
         <div class="container">
             <SectionIntro :title="props.title" :description="props.description" />
 
@@ -10,11 +10,12 @@
                 <div
                     v-for="(director, index) in props.directors"
                     :key="index"
+                    :class="{'max-lg:hidden': !director.name }"
                 >
                         <img @click="director.bio && openBioModal(index)"
-                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio, 'max-lg:hidden': !director.name }" v-if="director.image" class="director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
+                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" v-if="director.image" class="director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
                         <div class="flex flex-col gap-1 items-center">
-                            <h4 :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio, 'max-lg:hidden': !director.name }" @click="director.bio && openBioModal(index)" class="hover:text-[#B27E41] text-[22px] font-bold text-center">{{ director.name }}</h4>
+                            <h4 :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" @click="director.bio && openBioModal(index)" class="hover:text-[#B27E41] text-[22px] font-bold text-center">{{ director.name }}</h4>
                             <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="text-xl text-center">
                                 <i>{{ director.position }}</i>
                             </h5>

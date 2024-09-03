@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20 bg-black bg-opacity-[0.04]">
+    <section class="py-10 lg:py-20 bg-black bg-opacity-[0.04]">
         <div class="container">
             <SectionIntro title="Our story" description="Monty Holding began its journey in the media and telecom sectors, quickly establishing itself as a leader by pioneering cutting-edge technologies and setting new standards for excellence. <br /> As the company scaled, we diversified into various industries. A prime example is our operator-in-a-box solution, a comprehensive hardware and software offering with high customer retention potential and ample room for innovation." />
             

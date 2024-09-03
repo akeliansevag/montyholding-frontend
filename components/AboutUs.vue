@@ -1,18 +1,18 @@
 <template>
-    <section class="bg-black pt-20 pb-28 text-white">
+    <section class="bg-black pt-10 pb-10 lg:pt-20 lg:pb-28 text-white">
         <div class="container">
             <SectionIntro title="About Us"
                 description="Founded in 1998 by visionary entrepreneur Mountasser Hachem, Monty Holding has rapidly evolved into a global powerhouse, reshaping industries and exceeding expectations. From our UK headquarters, we're not just delivering solutions but we're architecting the future for our clients and partners."
                 class="text-white" />
 
-            <div class="relative grid grid-cols-2 md:grid-cols-4 mt-20 lg:max-w-[1100px] lg:mx-auto">
+            <div class="relative grid grid-cols-2 md:grid-cols-4 mt-10 lg:mt-20 lg:max-w-[1100px] lg:mx-auto">
                 <div v-for="stat in stats" class="stat text-center p-8 border border-[#BC945D]">
                     <h4 class="text-3xl font-bold z-20">{{ stat.title }}</h4>
                     <p>{{ stat.description }}</p>
                 </div>
             </div>
 
-            <div class="mt-20 max-w-[800px] mx-auto">
+            <div class="mt-10 lg:mt-20 max-w-[800px] mx-auto">
                 <div class="text-center">
                     <div class="inline-flex gap-5">
                         <button :class="activeButton === 'mission' ? 'opacity-100' : 'opacity-50'" @click="handleActiveClick('mission')" class="mission-vision">Mission</button>

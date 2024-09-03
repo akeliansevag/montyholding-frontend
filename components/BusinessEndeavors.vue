@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-white py-20">
+    <section class="bg-white py-10 lg:py-20">
         <div class="container">
             <SectionIntro title="Our business endeavors" />
 
