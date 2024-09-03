@@ -9,7 +9,7 @@
         description="A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide."
         :directors="BODMontyMobile" :button="{ link: 'https://montymobile.com', text: 'Visit Monty Mobile Website' }" />
         <BoardOfDirectors :dark="true" title="Monty Finance board of directors"
-        description="A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide."
+        description="Founded in 2021, Monty Finance SAL is a local financial technology service provider. We are dedicated to meeting the needs of underserved, dissatisfied, and unbanked communities through a comprehensive range of services across various verticals and markets, with a strong focus on empowering the Lebanese population."
         :directors="BODMontyFinance"
         :button="{ link: 'https://montyfinance.co.uk', text: 'Visit Monty Finance Website' }" />
     </div>
