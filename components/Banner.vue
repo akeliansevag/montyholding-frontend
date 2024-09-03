@@ -55,7 +55,7 @@
                     </svg>
                     <p class="max-lg:max-w-[70%] max-lg:mx-auto">Join us in our journey as we create value and change the world</p>
                     <div>
-                        <a class="mh-button white" href="">Contact us</a>
+                        <a class="mh-button white" href="mailto:info@montyholding.com">Contact us</a>
                     </div>
 
                 </div>
