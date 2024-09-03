@@ -1,15 +1,27 @@
 <template>
     <Banner />
-    <AboutUs />
-    <BoardOfDirectors title="Monty Mobile board of directors"
+    <div id="about-us">
+        <AboutUs />
+    </div>
+    
+    <div id="board-of-directors">
+        <BoardOfDirectors title="Monty Mobile board of directors"
         description="A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide."
         :directors="BODMontyMobile" :button="{ link: 'https://montymobile.com', text: 'Visit Monty Mobile Website' }" />
-
-    <BoardOfDirectors :dark="true" title="Monty Finance board of directors"
+        <BoardOfDirectors :dark="true" title="Monty Finance board of directors"
         description="A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide."
         :directors="BODMontyFinance"
         :button="{ link: 'https://montyfinance.com', text: 'Visit Monty Finance Website' }" />
-    <BusinessEndeavors />
+    </div>
+   
+
+    <div id="our-business-endeavors">
+        <BusinessEndeavors />
+    </div>
+    
+    <div id="our-story">
+        <OurStory />
+    </div>
 </template>
 
 <script setup>
@@ -89,7 +101,8 @@ const BODMontyFinance = [
         image: '/img/randa-b.webp',
         name: 'Randa Naboulsi',
         position: 'Group CFO',
-        linkedIn: 'https://linkedin.com'
+        linkedIn: 'https://linkedin.com',
+        bio: 'An ambitious, result oriented and accomplished Chief Financial Officer, Randa Naboulsi graduated with a BBA from the University of Balamand in Lebanon in 1995 and later completed her studies with an MBA from the Lebanese American University of Beirut in 2008. She has extensive hands-on expertise in Corporate Finance, Treasury, Budgeting and Forecasting, topping it up with strong connections with investors.'
     },
     {
         image: '/img/susanne-b.webp',

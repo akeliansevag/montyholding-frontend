@@ -33,7 +33,7 @@
         <transition name="overlay-fade">
             <div v-if="showModal" class="fixed p-4 inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" @click.self="closeBioModal">
                 <transition name="modal-scale">
-                    <div v-if="showModal" class="bg-white text-black p-8 rounded-3xl max-w-7xl max-h-full mx-auto overflow-hidden relative transform transition-transform duration-300">
+                    <div v-if="showModal" class="bg-white text-black px-8 py-8 lg:py-16 rounded-3xl max-w-7xl max-h-full mx-auto overflow-hidden relative transform transition-transform duration-300">
                         <button @click="closeBioModal" class="absolute top-5 right-5 text-black">
                             <svg fill="#000000" height="18" width="18" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 460.775 460.775" xml:space="preserve">

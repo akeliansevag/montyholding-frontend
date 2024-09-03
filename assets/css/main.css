@@ -18,7 +18,7 @@ body{
 }
 
 .stat:hover{
-    background: linear-gradient(90deg, #BC945D -736.92%, #966F41 -478.52%, #C89B62 -340.1%, #EFBD7C -220.13%, #FECB86 -155.53%, #ECBB7A -81.7%, #BF935C 65.95%, #966F41 185.92%);
+    background: conic-gradient(from 49deg at 73.96% -24.38%, #BC945D 0deg, #966F41 100.80000042915344deg, #C89B62 154.80000257492065deg, #EFBD7C 201.60000085830688deg, #FECB86 226.79999828338623deg, #ECBB7A 255.59999227523804deg, #BF935C 313.20000171661377deg, #966F41 360deg);
 }
 
 .stat:nth-child(1){
@@ -62,4 +62,21 @@ body{
    .stat:nth-child(7){
     border-left-width:0 ;
    }
+}
+
+
+.html-content h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top:15px;
+}
+
+.html-content ul{
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.html-content ol{
+    list-style-type: decimal;
+    padding-left: 30px;
 }

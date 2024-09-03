@@ -1,7 +1,7 @@
 <template>
-    <section class="bg-black py-20 text-white">
+    <section class="bg-black py-12 text-white">
         <div class="container">
-            <div class="flex flex-col lg:flex-row gap-10 items-center justify-between">
+            <!-- <div class="flex flex-col lg:flex-row gap-10 items-center justify-between">
                 <div class="flex flex-col sm:flex-row text-center sm:text-left gap-5 sm:gap-10">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms & Conditions</a>
@@ -30,7 +30,7 @@
 
                 </div>
             </div>
-            <div class="bg-[#7C8F7F] bg-opacity-[0.3] h-[1px] w-full mt-12 mb-10"></div>
+            <div class="bg-[#7C8F7F] bg-opacity-[0.3] h-[1px] w-full mt-12 mb-10"></div> -->
             <p class="text-center">Copyright © 2024 Monty Holding</p>
         </div>
     </section>

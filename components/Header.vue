@@ -3,6 +3,7 @@
       :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent h-[90px]'">
       <div class="container flex items-center justify-between h-full">
         <div class="z-10">
+          <a @click="goToTop($event)" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" fill="none">
                     <g clip-path="url(#clip0_1523_3106)">
                         <path
@@ -46,13 +47,16 @@
                         </clipPath>
                     </defs>
                 </svg>
+          </a>
+            
         </div>
         <div 
           :class="`fixed lg:relative w-full h-full lg:w-auto lg:h-auto bg-black lg:bg-transparent top-0 transition-all ${menuOpen ? 'left-0' : '-left-full lg:left-auto'}`">
           <ul class="flex flex-col text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Board of directors</a></li>
-            <li><a href="#">Our Business Endeavors</a></li>
+            <li><a @click="goTo($event,'about-us')" href="#">About us</a></li>
+            <li><a @click="goTo($event,'board-of-directors')" href="#">Board of directors</a></li>
+            <li><a @click="goTo($event,'our-business-endeavors')" href="#">Our Business Endeavors</a></li>
+            <li><a @click="goTo($event,'our-story')" href="#">Our Story</a></li>
           </ul>
         </div>
         <button @click="toggleMenu" class="hamburger focus:outline-none lg:hidden">
@@ -71,7 +75,21 @@
   
   const scrolled = ref(false);
   const menuOpen = ref(false);
-  
+
+  const goToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    menuOpen.value = false;
+  }
+  const goTo = (e,to) => {
+      e.preventDefault();
+      menuOpen.value = false;
+      if(to){
+        const element = document.getElementById(to);
+        element.scrollIntoView({ behavior: 'smooth'});
+      }
+  };
+
   const toggleMenu = () => {
     menuOpen.value = !menuOpen.value;
   };
@@ -80,12 +98,13 @@
     const handleScroll = () => {
       scrolled.value = window.scrollY !== 0;
     };
-  
+    
     window.addEventListener("scroll", handleScroll);
   
     onUnmounted(() => {
       window.removeEventListener("scroll", handleScroll);
     });
+
   });
   </script>
   
