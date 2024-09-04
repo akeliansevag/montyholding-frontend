@@ -7,17 +7,17 @@
                 <a class="mh-button" :href="props.button.link" target="_blank">{{ props.button.text }}</a>
             </div>
             
-            <div v-if="props.directors" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-20 max-w-[1200px] mx-auto">
+            <div v-if="props.directors" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 max-lg:gap-6 mt-20 max-w-[1200px] mx-auto">
                 <div
                     v-for="(director, index) in props.directors"
                     :key="index"
                     :class="{'max-lg:hidden': !director.name }"
                 >
                         <img @click="director.bio && openBioModal(index)"
-                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" v-if="director.image" class="director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
+                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" v-if="director.image" class="max-lg:max-h-[175px] max-h-[200px] director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
                         <div class="flex flex-col gap-1 items-center">
-                            <h4 :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" @click="director.bio && openBioModal(index)" class="hover:text-[#B27E41] text-[22px] font-bold text-center">{{ director.name }}</h4>
-                            <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="text-xl text-center">
+                            <h4 :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" @click="director.bio && openBioModal(index)" class="hover:text-[#B27E41] max-lg:text-[18px] text-[22px] font-bold text-center">{{ director.name }}</h4>
+                            <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="max-lg:text-[16px] text-xl text-center">
                                 <i>{{ director.position }}</i>
                             </h5>
                             <a v-if="director.linkedIn" class="inline-block mt-2" target="_blank" :href="director.linkedIn">
