@@ -101,7 +101,7 @@ const items = [
         title: 'Monty Mobile',
         excerpt: 'A global leader in telecommunications.',
         description: 'Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide.',
-        logo: '/img/montymobile-logo.svg',
+        logo: '/img/montymobile-full-logo.svg',
         link: 'https://montymobile.com'
     },
     {
