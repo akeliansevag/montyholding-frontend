@@ -9,7 +9,7 @@
                         <div class="cursor-pointer flex items-center gap-4 justify-between" @click="toggle(item.id)">
                             <div class="flex w-full" >
                                 <div class="lg:w-4/5">
-                                    <h5 class="text-[24px] font-bold mb-1">{{ item.title }}</h5>
+                                    <h5 class="max-lg:text-[18px] text-[24px] font-bold mb-1">{{ item.title }}</h5>
                                     <p>{{ item.excerpt }}</p>
                                 </div>
                                 <div>
