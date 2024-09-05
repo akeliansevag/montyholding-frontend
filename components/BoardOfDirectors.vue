@@ -7,7 +7,7 @@
                 <a class="mh-button" :href="props.button.link" target="_blank">{{ props.button.text }}</a>
             </div>
             
-            <div v-if="props.directors" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 max-lg:gap-0 mt-20 max-w-[1200px] mx-auto">
+            <div v-if="props.directors" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-lg:gap-0 mt-20 max-w-[1200px] mx-auto">
                 <div
                     v-for="(director, index) in props.directors"
                     :key="index"
