@@ -4,7 +4,7 @@
             alt="Banner Background">
         <div class="bg-black bg-opacity-40 absolute lg:hidden w-full h-full left-0 top-0 z-20"></div>
         <div class="container">
-            <div class="relative gap-10 flex items-center justify-between pb-10 lg:pb-0">
+            <div class="relative gap-10 flex items-center justify-between pb-5 lg:pb-0">
                 <div class="flex flex-col items-center w-full gap-4 max-lg:text-center lg:gap-8 relative z-30 lg:w-2/5 pr-0 lg:pr-10">
                     <img class="max-lg:max-w-[250px] block" src="/public/img/mountasser-hachem-new.svg" alt="Mountasser Hachem">
                 </div>
