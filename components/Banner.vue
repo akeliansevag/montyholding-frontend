@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-black overflow-hidden pt-[90px] min-h-[58vh] lg:min-h-screen w-full relative text-white flex flex-col justify-end">
+    <section class="bg-black max-lg:overflow-hidden pt-[90px] min-h-[58vh] lg:min-h-screen w-full relative text-white flex flex-col justify-end">
         <img class="object-cover object-center absolute w-full h-full z-10" src="/public/img/banner-bg.webp"
             alt="Banner Background">
         <div class="bg-black bg-opacity-40 absolute lg:hidden w-full h-full left-0 top-0 z-20"></div>
@@ -9,11 +9,12 @@
                     <img class="max-lg:max-w-[250px] block" src="/public/img/mountasser-hachem-new.svg" alt="Mountasser Hachem">
                 </div>
                 <div class="absolute bottom-0 lg:relative z-10 lg:w-3/5">
-                    <img class="max-lg:hidden w-full" src="/public/img/Mountasser-Hachem.webp" alt="Mountasser-Hachem">
+                    <img class="max-lg:hidden w-full" src="/public/img/monty-img-lg.webp" alt="Mountasser-Hachem">
                     <img class="lg:hidden w-full translate-y-[190px]" src="/public/img/monty-img.webp" alt="Mountasser-Hachem">
                 </div>
             </div>
         </div>
+        <div class="max-lg:hidden absolute -bottom-[35px] bg-white w-[1px] h-[100px] z-10 left-1/2"></div>
     </section>
 </template>
 
