@@ -3,7 +3,7 @@
       :class="scrolled ? 'bg-black h-[70px]' : 'bg-transparent h-[90px]'">
       <div class="container flex items-center justify-between h-full">
         <div class="z-10">
-          <a @click="goToTop($event)" href="#">
+          <a @click="goToTop($event)" class="pt-1 block" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="max-lg:w-[150px]" width="192" height="30" viewBox="0 0 192 30" fill="none">
                     <g clip-path="url(#clip0_1523_3106)">
                         <path
@@ -52,11 +52,12 @@
         </div>
         <div 
           :class="`fixed lg:relative w-full h-full lg:w-auto lg:h-auto bg-black lg:bg-transparent top-0 transition-all ${menuOpen ? 'left-0' : '-left-full lg:left-auto'}`">
-          <ul class="flex flex-col text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
+          <ul class="flex flex-col items-center text-xl font-bold lg:text-base lg:font-normal lg:flex-row px-4 lg:px-0 mt-[90px] lg:mt-0 gap-5">
             <li><a @click="goTo($event,'about-us')" href="#" class="hover:text-[#bc945d]">About us</a></li>
             <li><a @click="goTo($event,'board-of-directors')" href="#" class="hover:text-[#bc945d]">Board of directors</a></li>
             <li><a @click="goTo($event,'our-business-endeavors')" href="#" class="hover:text-[#bc945d]">Our business endeavors</a></li>
             <li><a @click="goTo($event,'our-story')" href="#" class="hover:text-[#bc945d]">Our story</a></li>
+            <li><a class="mh-button white" href="mailto:info@montyholding.com">Contact us</a></li>
           </ul>
         </div> 
         <button @click="toggleMenu" class="hamburger focus:outline-none lg:hidden">
