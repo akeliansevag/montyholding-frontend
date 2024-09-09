@@ -26,7 +26,7 @@
 
             <div class="relative angular-background py-10 lg:py-16 px-8 lg:px-20 rounded-2xl">
                 <div class="absolute z-10 bg-[#B27E41] h-[50px] lg:h-[100px] w-[1px] left-1/2 top-0 -translate-y-[25px] lg:-translate-y-[50px]"></div>
-                <div class="absolute w-full h-full bg-black bg-opacity-40 top-0 left-0 z-0"></div>
+                <div class="absolute w-full h-full bg-black bg-opacity-70 top-0 left-0 z-0"></div>
                 <div class="relative z-10">
                     <div class="text-center max-w-[800px] mx-auto">
                         <h2 class="text-xl lg:text-2xl">Welcome to Monty Holding, where the future is limitless, and the possibilities are endless.</h2>
