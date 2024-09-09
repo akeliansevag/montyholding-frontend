@@ -53,7 +53,7 @@ const stats = [
     },
     {
         title: '$245 M',
-        description: 'Revenue FY23'
+        description: 'Revenue FY23',
     },
     {
         title: '3.7%',
