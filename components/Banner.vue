@@ -4,9 +4,10 @@
             alt="Banner Background">
         <div class="mobile-overlay absolute lg:hidden w-full h-full left-0 top-0 z-20"></div>
         <div class="container">
+            <img class="max-lg:max-w-[310px] absolute max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:bottom-16 lg:top-1/2 lg:-translate-y-10 z-20 max-w-[850px]" src="/public/img/monty-new.svg" alt="Mountasser Hachem">
             <div class="relative gap-10 flex items-center justify-between pb-5 lg:pb-0">
                 <div class="flex flex-col items-center w-full gap-4 max-lg:text-center lg:gap-8 relative z-30 lg:w-2/5 pr-0 lg:pr-10">
-                    <img class="max-lg:max-w-[250px] block" src="/public/img/mountasser-hachem-new.svg" alt="Mountasser Hachem">
+                    <!-- <img class="max-lg:max-w-[250px] block" src="/public/img/mountasser-hachem-new.webp" alt="Mountasser Hachem"> -->
                 </div>
                 <div class="absolute bottom-0 lg:relative z-10 lg:w-3/5">
                     <img class="max-lg:hidden w-full" src="/public/img/monty-img-lg.webp" alt="Mountasser-Hachem">
