@@ -8,7 +8,7 @@
         <BoardOfDirectors title="Monty Mobile board of directors"
         description="A global leader in telecommunications, Monty Mobile delivers innovative technology and communication solutions to mobile network operators, enterprises, and service providers worldwide."
         :directors="BODMontyMobile" :button="{ link: 'https://montymobile.com', text: 'Visit Monty Mobile Website' }" />
-        <BoardOfDirectors :dark="true" title="Monty Finance board of directors"
+        <BoardOfDirectors :colored="true" :dark="true" title="Monty Finance board of directors"
         description="Monty Finance is a local financial technology service provider. They are dedicated to meeting the needs of underserved,and unbanked communities through a comprehensive range of services across various verticals and markets."
         :directors="BODMontyFinance"
         :button="{ link: 'https://montyfinance.co.uk', text: 'Visit Monty Finance Website' }" />

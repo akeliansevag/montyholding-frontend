@@ -84,15 +84,21 @@ body{
     list-style-type: decimal;
     padding-left: 30px;
 }
-.director-image{
-    filter: grayscale(100%);
-}
+
 .director-image:hover{
     background:lightgray 50% / cover no-repeat;
     box-shadow: 0px 0px 32px 0px #BA933E;
-    filter: grayscale(0%);
+    
 }
 
+
+.director-image.colored-hover{
+    filter: grayscale(100%);
+}
+
+.director-image.colored-hover:hover{
+    filter: grayscale(0%);
+}
 
 .angular-background{
     background: conic-gradient(from 48.77deg at 73.96% -24.38%, #BC945D 0deg, #966F41 100.8deg, #C89B62 154.8deg, #EFBD7C 201.6deg, #FECB86 226.8deg, #ECBB7A 255.6deg, #BF935C 313.2deg, #966F41 360deg);

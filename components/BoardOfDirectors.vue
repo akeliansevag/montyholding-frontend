@@ -15,7 +15,7 @@
                     class="max-lg:mb-5"
                 >
                         <img @click="director.bio && openBioModal(index)"
-                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" v-if="director.image" class="max-lg:max-h-[160px] max-h-[200px] director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
+                        :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio, 'colored-hover': props.colored }" v-if="director.image" class="max-lg:max-h-[160px] max-h-[200px] director-image mb-5 mx-auto rounded-full" :src="director.image" :alt="director.name">
                         <div class="flex flex-col max-lg:gap-0 gap-1 items-center">
                             <h4 :class="{ 'cursor-pointer': director.bio, 'cursor-default': !director.bio }" @click="director.bio && openBioModal(index)" class="hover:text-[#B27E41] max-lg:text-[18px] text-[22px] font-bold text-center">{{ director.name }}</h4>
                             <h5 :class="dark ? 'text-white' : 'text-[#B27E41]'" class="max-lg:text-[16px] text-xl text-center">
@@ -100,7 +100,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 
-const props = defineProps(['dark', 'title', 'description', 'button', 'directors']);
+const props = defineProps(['dark', 'colored', 'title', 'description', 'button', 'directors']);
 const showModal = ref(false);
 const currentDirector = ref({});
 const currentIndex = ref(0);
