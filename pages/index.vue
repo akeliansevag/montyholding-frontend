@@ -109,7 +109,7 @@ const BODMontyFinance = [
         linkedIn: null
     },
     {
-        image: '/img/mountasser-hachem-b.webp',
+        image: '/img/monty-c.webp',
         name: 'Mountasser Hachem',
         position: 'CEO',
         linkedIn: 'https://www.linkedin.com/in/mountasser-hachem-877a7a2a/',
@@ -128,21 +128,21 @@ const BODMontyFinance = [
         linkedIn: null
     },
     {
-        image: '/img/mike-b.webp',
+        image: '/img/mike-c.webp',
         name: 'Mike Quintanilla',
         position: 'Board Member',
         linkedIn: 'https://www.linkedin.com/in/michaelquintanilla/',
         bio: 'Mike Quintanilla is a leader in fintech and blockchain technology, with a proven track record across several high-impact roles in the USA. At SoftServe, as the Director of Blockchain & BaaS, he led the transformation of payment systems by integrating advanced technologies and collaborating with industry giants such as AWS, Azure, and GCP. Prior to this, as Senior Director of Fintech & Innovation at Blockchains, Inc., Mike enhanced AML/CFT frameworks and focused on innovative solutions within the digital asset ecosystem. His role as Chief Innovation Officer at GenuBank saw him overhaul the bank\'s technology infrastructure, implementing real-time payment services and crypto compliance initiatives. His earlier experience includes strategic positions at First Horizon Bank, where he advanced blockchain integration and cryptocurrency initiatives, and at Susquehanna Bank and Mitsubishi UFJ Trust & Banking Corporation, where he made significant contributions to FX trading and client relations. Mike\'s extensive background in fintech, blockchain, and regulatory compliance underscores his expertise in driving technological and strategic advancements in the financial sector.'
     },
     {
-        image: '/img/randa-b.webp',
+        image: '/img/randa-c.webp',
         name: 'Randa Naboulsi',
         position: 'Group CFO',
         linkedIn: 'https://www.linkedin.com/in/randa-naboulsi-4b000b60/',
         bio: 'An ambitious, result oriented and accomplished Chief Financial Officer, Randa Naboulsi graduated with a BBA from the University of Balamand in Lebanon in 1995 and later completed her studies with an MBA from the Lebanese American University of Beirut in 2008. She has extensive hands-on expertise in Corporate Finance, Treasury, Budgeting and Forecasting, topping it up with strong connections with investors.'
     },
     {
-        image: '/img/susanne-b.webp',
+        image: '/img/susanne-c.webp',
         name: 'Susanne Hannestad',
         position: 'Board Member',
         linkedIn: 'https://www.linkedin.com/in/susannehannestad/',
@@ -150,14 +150,14 @@ const BODMontyFinance = [
     },
     
     {
-        image: '/img/arvinder-b.webp',
+        image: '/img/arvinder-c.webp',
         name: 'Arvinder Gujral',
         position: 'Board Member',
         linkedIn: 'https://www.linkedin.com/in/arvindergujral/',
         bio: 'Arvinder Gural is an executive with a robust track record in driving global growth and innovation in the technology and telecom sectors. Previously, he served as Managing Director for Southeast Asia at Twitter in APAC, where he turned around negative business trends, achieving 7.5X growth and establishing SEA as a top 10 market in revenue and audience. As a founding member of Twitter India, he played a pivotal role in its setup and expansion. As Chief Revenue Officer at WATI in Singapore, he led go-to-market strategies, revenue generation, and customer success initiatives, significantly expanding the company’s global footprint. Arvinder also held leadership roles at Aircel, Geodesic, CIBER, iGATE in San Francisco, and Infosys, where he drove substantial revenue growth, built strategic partnerships, and led impactful marketing and business development initiatives. His extensive experience and strategic vision have been instrumental in scaling businesses and navigating complex markets.'
     },
     {
-        image: '/img/sara-b.webp',
+        image: '/img/sarah-c.webp',
         name: 'Sarah Alateeqi',
         position: 'Board Member',
         linkedIn: 'https://www.linkedin.com/in/saranalateeqi/',
