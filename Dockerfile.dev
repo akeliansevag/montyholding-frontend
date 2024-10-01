@@ -11,6 +11,6 @@ COPY . .
 
 EXPOSE 3000
 
-CMD [ "npm", "run", "dev" ]
+CMD rm -f /tmp/nitro/worker-*.sock && npm run dev
 
 # CMD ["sh", "-c", "while :; do sleep 1; done"]
